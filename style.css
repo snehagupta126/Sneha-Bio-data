@@ -1293,3 +1293,70 @@ footer {
     }
 
 }
+/* ===== CENTERED HERO ===== */
+
+.hero {
+    min-height: 100vh !important;
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+}
+
+.hero-content {
+    width: 100% !important;
+    max-width: 900px !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    text-align: center !important;
+}
+
+.hero h1 {
+    text-align: center !important;
+}
+
+.hero-description {
+    max-width: 650px !important;
+    margin: 25px auto !important;
+    text-align: center !important;
+}
+
+/* ===== EXPLORE BUTTON ===== */
+
+.hero-button {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 15px auto 0 !important;
+
+    padding: 14px 28px;
+
+    border: 1px solid #96705c;
+    border-radius: 50px;
+
+    color: #6c4f40;
+    background: transparent;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #6c4f40;
+    color: white;
+    transform: translateY(-3px);
+}
