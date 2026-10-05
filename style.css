@@ -112,41 +112,147 @@ body {
    HERO
 ========================================= */
 
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero {
     min-height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 8% 80px;
+    padding: 120px 20px 80px;
+    box-sizing: border-box;
 }
 
 .hero-content {
-    max-width: 800px;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
 }
+
+/* Small heading */
 
 .hero .eyebrow {
-    margin-bottom: 18px;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #967b6b;
 }
 
+/* Name */
+
 .hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(70px, 10vw, 125px);
+    line-height: 0.82;
+    font-weight: 500;
     margin: 0;
+    color: #4f392e;
+    text-align: center;
 }
+
+.hero h1 span {
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+    color: #96705c;
+}
+
+/* Description */
 
 .hero-description {
     max-width: 650px;
-    margin: 25px auto 35px;
+    margin: 35px auto 40px;
+
+    font-size: 17px;
     line-height: 1.8;
+    color: #76645a;
+
+    text-align: center;
+}
+
+/* Explore button */
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 30px;
+
+    border: 1px solid #96705c;
+    border-radius: 50px;
+
+    background: transparent;
+    color: #6c4f40;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #6c4f40;
+    color: #fffaf6;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(80, 50, 35, 0.15);
 }
 
 
-.explore-button:hover {
+/* =========================
+   MOBILE
+========================= */
 
-    transform: translateY(-4px);
+@media (max-width: 768px) {
 
-    background: #a96f69;
+    .hero {
+        padding: 110px 25px 70px;
+    }
 
+    .hero h1 {
+        font-size: clamp(60px, 17vw, 90px);
+    }
+
+    .hero-description {
+        font-size: 16px;
+        max-width: 550px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 90vh;
+        padding: 100px 20px 60px;
+    }
+
+    .hero h1 {
+        font-size: 62px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-button {
+        padding: 13px 25px;
+        font-size: 13px;
+    }
 }
 
 
