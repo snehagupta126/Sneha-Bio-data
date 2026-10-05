@@ -1222,6 +1222,71 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+   /* =========================
+   CENTER HERO CONTENT
+========================= */
+
+.hero {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.hero-content {
+    width: 100% !important;
+    max-width: 850px !important;
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    text-align: center !important;
+}
+
+.hero h1 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.hero-description {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Explore button */
+
+.hero-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 25px auto 0 !important;
+
+    padding: 14px 28px;
+
+    text-decoration: none;
+
+    border: 1px solid #96705c;
+    border-radius: 50px;
+
+    color: #6c4f40;
+    background: transparent;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #6c4f40;
+    color: white;
+    transform: translateY(-3px);
+}
 
     .family-quote {
         font-size: 55px;
