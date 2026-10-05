@@ -112,95 +112,71 @@ body {
    HERO
 ========================================= */
 
+/* ===== CENTERED HERO ===== */
+
 .hero {
-
     min-height: 100vh;
-
-    padding: 130px 7vw 80px;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 80px;
-
+    width: 100%;
+    display: flex;
     align-items: center;
-
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 60px;
+    box-sizing: border-box;
 }
 
-
-.small-heading {
-
-    color: #a96f69;
-
-    font-size: 11px;
-
-    letter-spacing: .3em;
-
-    margin-bottom: 25px;
-
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+.hero .eyebrow {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .hero h1 {
-
-    font-family: "Cormorant Garamond";
-
-    font-weight: 500;
-
-    font-size: clamp(70px, 10vw, 140px);
-
-    line-height: .75;
-
-    letter-spacing: -.05em;
-
-    margin-bottom: 35px;
-
+    margin: 0;
+    text-align: center;
 }
 
+.hero h1 span {
+    display: block;
+}
 
 .hero-description {
-
-    max-width: 480px;
-
-    color: #766d65;
-
-    line-height: 1.8;
-
-    font-size: 15px;
-
+    max-width: 650px;
+    margin: 25px auto;
+    text-align: center;
 }
 
-
-.explore-button {
-
-    display: inline-block;
-
-    margin-top: 30px;
-
-    padding: 15px 25px;
-
-    background: #2e2925;
-
-    color: white;
-
-    text-decoration: none;
-
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 15px auto 0;
+    padding: 14px 28px;
+    border: 1px solid #96705c;
     border-radius: 50px;
-
-    font-size: 12px;
-
-    transition: .4s;
-
+    color: #6c4f40;
+    background: transparent;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
 }
 
-
-.explore-button:hover {
-
-    transform: translateY(-4px);
-
-    background: #a96f69;
-
+.hero-button:hover {
+    background: #6c4f40;
+    color: white;
+    transform: translateY(-3px);
 }
 
 
