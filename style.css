@@ -1142,61 +1142,57 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-   /* =========================
-   CENTERED HERO - NO IMAGE
+ /* =========================
+   CENTER HERO - KEEP ORIGINAL STYLE
 ========================= */
 
 .hero {
-    min-height: 100vh !important;
-    width: 100% !important;
-
+    min-height: 100vh;
+    width: 100%;
     display: flex !important;
-    align-items: center !important;
+    align-items: center;
     justify-content: center !important;
-
-    text-align: center !important;
-
-    padding: 100px 20px 80px !important;
+    text-align: center;
+    padding: 100px 20px 80px;
     box-sizing: border-box;
 }
 
 .hero-content {
-    width: 100% !important;
-    max-width: 850px !important;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto !important;
 
-    margin-left: auto !important;
-    margin-right: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    text-align: center !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    text-align: center;
 }
 
+/* Keep the large elegant name */
 .hero h1 {
-    text-align: center !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Keep description centered */
 .hero-description {
-    max-width: 650px !important;
-    margin: 25px auto 35px !important;
-    text-align: center !important;
+    max-width: 650px;
+    margin: 25px auto 35px;
+    text-align: center;
 }
 
-.hero .eyebrow {
-    text-align: center !important;
-}
-
+/* Keep the Explore button visible */
 .hero-button {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto !important;
+    text-decoration: none;
 }
 
-    .family-quote {
-        font-size: 55px;
-    }
-
+/* Center the small BIODATA heading */
+.hero .eyebrow {
+    text-align: center;
 }
