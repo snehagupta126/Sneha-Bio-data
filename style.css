@@ -25,10 +25,12 @@ body {
 ========================================= */
 
 .navbar {
+
     position: fixed;
 
     top: 20px;
     left: 50%;
+
     transform: translateX(-50%);
 
     width: min(92%, 900px);
@@ -36,13 +38,17 @@ body {
     padding: 12px 20px;
 
     display: flex;
+
     align-items: center;
-    justify-content: center;
+
+    justify-content: space-between;
 
     background: rgba(255, 250, 244, 0.85);
+
     backdrop-filter: blur(15px);
 
     border: 1px solid rgba(255,255,255,.8);
+
     border-radius: 50px;
 
     z-index: 1000;
@@ -52,8 +58,6 @@ body {
 
 
 .logo {
-    position: absolute;
-    left: 20px;
 
     width: 35px;
     height: 35px;
@@ -64,18 +68,43 @@ body {
     border-radius: 50%;
 
     background: #2e2925;
+
     color: white;
 
     font-family: "Cormorant Garamond";
+
     font-size: 18px;
 }
 
 
 .nav-links {
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+
     gap: 25px;
+
+}
+
+
+.nav-links a {
+
+    color: #2e2925;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .1em;
+
+    transition: .3s;
+
+}
+
+
+.nav-links a:hover {
+    color: #a96f69;
 }
 
 
