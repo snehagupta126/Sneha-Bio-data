@@ -1142,6 +1142,58 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+   /* =========================
+   CENTERED HERO - NO IMAGE
+========================= */
+
+.hero {
+    min-height: 100vh !important;
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    padding: 100px 20px 80px !important;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    width: 100% !important;
+    max-width: 850px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    text-align: center !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.hero h1 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.hero-description {
+    max-width: 650px !important;
+    margin: 25px auto 35px !important;
+    text-align: center !important;
+}
+
+.hero .eyebrow {
+    text-align: center !important;
+}
+
+.hero-button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 
     .family-quote {
         font-size: 55px;
