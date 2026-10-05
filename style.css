@@ -112,150 +112,124 @@ body {
    HERO
 ========================================= */
 
-/* =========================
-   HERO SECTION
-========================= */
-
 .hero {
+
     min-height: 100vh;
-    width: 100%;
-    display: flex;
+
+    padding: 130px 7vw 80px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 120px 20px 80px;
-    box-sizing: border-box;
+
 }
 
-.hero-content {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.small-heading {
 
-    text-align: center;
+    color: #a96f69;
+
+    font-size: 11px;
+
+    letter-spacing: .3em;
+
+    margin-bottom: 25px;
+
 }
 
-/* Small heading */
-
-.hero .eyebrow {
-    font-size: 13px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #967b6b;
-}
-
-/* Name */
 
 .hero h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: clamp(70px, 10vw, 125px);
-    line-height: 0.82;
+
+    font-family: "Cormorant Garamond";
+
     font-weight: 500;
-    margin: 0;
-    color: #4f392e;
-    text-align: center;
+
+    font-size: clamp(70px, 10vw, 140px);
+
+    line-height: .75;
+
+    letter-spacing: -.05em;
+
+    margin-bottom: 35px;
+
 }
 
-.hero h1 span {
-    display: block;
-    font-style: italic;
-    font-weight: 400;
-    color: #96705c;
-}
-
-/* Description */
 
 .hero-description {
-    max-width: 650px;
-    margin: 35px auto 40px;
 
-    font-size: 17px;
+    max-width: 480px;
+
+    color: #766d65;
+
     line-height: 1.8;
-    color: #76645a;
 
-    text-align: center;
+    font-size: 15px;
+
 }
 
-/* Explore button */
 
-.hero-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.explore-button {
 
-    padding: 15px 30px;
+    display: inline-block;
 
-    border: 1px solid #96705c;
-    border-radius: 50px;
+    margin-top: 30px;
 
-    background: transparent;
-    color: #6c4f40;
+    padding: 15px 25px;
 
-    font-size: 14px;
-    letter-spacing: 1px;
+    background: #2e2925;
+
+    color: white;
+
     text-decoration: none;
 
-    transition: all 0.3s ease;
-}
+    border-radius: 50px;
 
-.hero-button:hover {
-    background: #6c4f40;
-    color: #fffaf6;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(80, 50, 35, 0.15);
-}
+    font-size: 12px;
 
+    transition: .4s;
 
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    .hero {
-        padding: 110px 25px 70px;
-    }
-
-    .hero h1 {
-        font-size: clamp(60px, 17vw, 90px);
-    }
-
-    .hero-description {
-        font-size: 16px;
-        max-width: 550px;
-    }
 }
 
 
-@media (max-width: 480px) {
+.explore-button:hover {
 
-    .hero {
-        min-height: 90vh;
-        padding: 100px 20px 60px;
-    }
+    transform: translateY(-4px);
 
-    .hero h1 {
-        font-size: 62px;
-    }
+    background: #a96f69;
 
-    .hero-description {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-    .hero-button {
-        padding: 13px 25px;
-        font-size: 13px;
-    }
 }
 
 
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-image {
+
+    height: 650px;
+
+    position: relative;
+
+}
+
+
+.hero-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 48% 48% 18% 18%;
+
+    box-shadow: 25px 30px 70px rgba(70,50,35,.18);
+
+}
 
 
 .floating-card {
@@ -1248,57 +1222,9 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
- /* =========================
-   CENTER HERO - KEEP ORIGINAL STYLE
-========================= */
 
-.hero {
-    min-height: 100vh;
-    width: 100%;
-    display: flex !important;
-    align-items: center;
-    justify-content: center !important;
-    text-align: center;
-    padding: 100px 20px 80px;
-    box-sizing: border-box;
-}
+    .family-quote {
+        font-size: 55px;
+    }
 
-.hero-content {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto !important;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-}
-
-/* Keep the large elegant name */
-.hero h1 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Keep description centered */
-.hero-description {
-    max-width: 650px;
-    margin: 25px auto 35px;
-    text-align: center;
-}
-
-/* Keep the Explore button visible */
-.hero-button {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto !important;
-    text-decoration: none;
-}
-
-/* Center the small BIODATA heading */
-.hero .eyebrow {
-    text-align: center;
 }
